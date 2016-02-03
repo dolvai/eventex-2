@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'eventex.core',
+    'eventex.subscriptions',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -121,3 +122,24 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+"""
+# dj-libcloud
+AWS_BUCKET_NAME = config('AWS_BUCKET_NAME')
+AWS_ACCESS_KEY = config('AWS_ACCESS_KEY')
+AWS_SECRET_KEY = config('AWS_SECRET_KEY')
+STATIC_URL = 'https://{}.s3-website-sa-east-1.amazonaws.com/'.format(AWS_BUCKET_NAME)
+STATICFILES_STORAGE = 'djlibcloud.storage.LibCloudStorage'
+
+LIBCLOUD_PROVIDERS = {
+  'default': {
+    'type': 'libcloud.storage.types.Provider.S3_SA_EAST',
+    'user': AWS_ACCESS_KEY,
+    'key': AWS_SECRET_KEY,
+    'bucket': AWS_BUCKET_NAME,
+    'secure': True,
+  },
+}
+
+#DEFAULT_LIBCLOUD_PROVIDER = 'amazon_s3_sa_east'
+
+"""
