@@ -120,9 +120,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-"""
+
 # dj-libcloud
 AWS_BUCKET_NAME = config('AWS_BUCKET_NAME')
 AWS_ACCESS_KEY = config('AWS_ACCESS_KEY')
@@ -142,7 +142,7 @@ LIBCLOUD_PROVIDERS = {
 
 #DEFAULT_LIBCLOUD_PROVIDER = 'amazon_s3_sa_east'
 
-"""
+
 
 # Email configuration
 
