@@ -2,6 +2,9 @@
 
 Sistema de Eventos encomendado pela Morena.
 
+[![Build Status](https://travis-ci.org/gustavodeandrade/eventex.svg?branch=master)](https://travis-ci.org/gustavodeandrade/eventex)
+[![Code Health](https://landscape.io/github/gustavodeandrade/eventex/master/landscape.svg?style=flat)](https://landscape.io/github/gustavodeandrade/eventex/master)
+
 ## Como desenvolver?
 
 1. Clone o repositório.
